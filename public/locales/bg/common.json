@@ -293,7 +293,8 @@
         "queries": "Заявки",
         "blocked": "Блокирани",
         "blocked_percent": "Blocked %",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Version"
     },
     "adguard": {
         "queries": "Заявки",

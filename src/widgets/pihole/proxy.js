@@ -38,7 +38,7 @@ async function login(widget, service) {
 
 export default async function piholeProxyHandler(req, res) {
   const { group, service, index } = req.query;
-  let endpoint = "stats/summary";
+  let endpoint;
 
   if (!group || !service) {
     logger.error("Invalid or missing service '%s' or group '%s'", service, group);
@@ -70,6 +70,44 @@ export default async function piholeProxyHandler(req, res) {
     return res.status(500).json({ error: "Failed to authenticate with Pi-hole" });
   }
 
+  let versionData;
+  let version;
+  if (widget.fields && widget.fields.includes("version")) {
+    endpoint = "info/version";
+    try {
+      logger.debug("Calling Pi-hole API endpoint: %s", endpoint);
+      const headers = {
+        "Content-Type": "application/json",
+      };
+      if (sid) {
+        headers["X-FTL-SID"] = sid;
+      } else {
+        logger.debug("Pi-hole request is unauthenticated");
+      }
+      [status, , versionData] = await httpProxy(formatApiCall(widgets[widget.type].api, { ...widget, endpoint }), {
+        headers,
+      });
+
+      if (status !== 200) {
+        logger.error("Error calling Pi-Hole API %s: %d. Data: %s", endpoint, status, versionData);
+        return res.status(status).json({ error: "Pi-Hole API Error", versionData });
+      }
+      const versionDataParsed = JSON.parse(versionData);
+      version = {
+        core_local: versionDataParsed.version.core.local.version,
+        core_remote: versionDataParsed.version.core.remote.version,
+        ftl_local: versionDataParsed.version.ftl.local.version,
+        ftl_remote: versionDataParsed.version.ftl.remote.version,
+        web_local: versionDataParsed.version.web.local.version,
+        web_remote: versionDataParsed.version.web.remote.version,
+      };
+    } catch (error) {
+      logger.error("Exception calling Pi-Hole API %s: %s", endpoint, error.message);
+      return res.status(500).json({ error: "Pi-Hole API Error", message: error.message });
+    }
+  }
+
+  endpoint = "stats/summary";
   try {
     logger.debug("Calling Pi-hole API endpoint: %s", endpoint);
     const headers = {
@@ -85,7 +123,7 @@ export default async function piholeProxyHandler(req, res) {
     });
 
     if (status !== 200) {
-      logger.error("Error calling Pi-Hole API: %d. Data: %s", status, data);
+      logger.error("Error calling Pi-Hole API %s: %d. Data: %s", endpoint, status, data);
       return res.status(status).json({ error: "Pi-Hole API Error", data });
     }
 
@@ -95,9 +133,10 @@ export default async function piholeProxyHandler(req, res) {
       ads_blocked_today: dataParsed.queries.blocked,
       ads_percentage_today: dataParsed.queries.percent_blocked,
       dns_queries_today: dataParsed.queries.total,
+      version: version,
     });
   } catch (error) {
-    logger.error("Exception calling Pi-Hole API: %s", error.message);
+    logger.error("Exception calling Pi-Hole API %s: %s", endpoint, error.message);
     return res.status(500).json({ error: "Pi-Hole API Error", message: error.message });
   }
 }

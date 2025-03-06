@@ -293,7 +293,8 @@
         "queries": "Dotazy",
         "blocked": "Blokováno",
         "blocked_percent": "Blokováno",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Verze"
     },
     "adguard": {
         "queries": "Dotazy",

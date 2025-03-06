@@ -293,7 +293,8 @@
         "queries": "쿼리",
         "blocked": "차단됨",
         "blocked_percent": "Blocked %",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "버전"
     },
     "adguard": {
         "queries": "쿼리",

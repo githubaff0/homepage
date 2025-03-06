@@ -293,7 +293,8 @@
         "queries": "Verzoeken",
         "blocked": "Geblokkeerd",
         "blocked_percent": "Geblokkeerde %",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Versie"
     },
     "adguard": {
         "queries": "Verzoeken",

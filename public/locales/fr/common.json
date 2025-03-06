@@ -293,7 +293,8 @@
         "queries": "Requêtes",
         "blocked": "Bloqué",
         "blocked_percent": "% bloqué",
-        "gravity": "Listes dom. bloqués"
+        "gravity": "Listes dom. bloqués",
+        "version": "Version"
     },
     "adguard": {
         "queries": "Requêtes",

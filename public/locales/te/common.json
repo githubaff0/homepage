@@ -293,7 +293,8 @@
         "queries": "ప్రశ్నలు",
         "blocked": "నిరోధించబడింది",
         "blocked_percent": "Blocked %",
-        "gravity": "గురుత్వాకర్షణ"
+        "gravity": "గురుత్వాకర్షణ",
+        "version": "Version"
     },
     "adguard": {
         "queries": "ప్రశ్నలు",

@@ -97,8 +97,9 @@
     "pihole": {
         "queries": "Spørringer",
         "blocked": "Blokkert",
+        "blocked_percent": "Blocked %",
         "gravity": "Gravitet",
-        "blocked_percent": "Blocked %"
+        "version": "Version"
     },
     "speedtest": {
         "upload": "Opplasting",

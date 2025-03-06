@@ -26,6 +26,7 @@ export default function Component({ service }) {
         <Block label="pihole.blocked" />
         <Block label="pihole.blocked_percent" />
         <Block label="pihole.gravity" />
+        <Block label="pihole.version" />
       </Container>
     );
   }
@@ -33,6 +34,18 @@ export default function Component({ service }) {
   let blockedValue = `${t("common.number", { value: parseInt(piholeData.ads_blocked_today, 10) })}`;
   if (!widget.fields.includes("blocked_percent")) {
     blockedValue += ` (${t("common.percent", { value: parseFloat(piholeData.ads_percentage_today).toPrecision(3) })})`;
+  }
+
+  let version = "";
+  if (piholeData.version) {
+    version = piholeData.version.core_local;
+    if (
+      piholeData.version.core_local != piholeData.version.core_remote ||
+      piholeData.version.ftl_local != piholeData.version.ftl_remote ||
+      piholeData.version.web_local != piholeData.version.web_remote
+    ) {
+      version += "^";
+    }
   }
 
   return (
@@ -47,6 +60,7 @@ export default function Component({ service }) {
         label="pihole.gravity"
         value={t("common.number", { value: parseInt(piholeData.domains_being_blocked, 10) })}
       />
+      <Block label="pihole.version" value={version} />
     </Container>
   );
 }

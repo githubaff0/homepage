@@ -293,7 +293,8 @@
         "queries": "Zapytania",
         "blocked": "Zablokowane",
         "blocked_percent": "Zablokowano %",
-        "gravity": "Grawitacja"
+        "gravity": "Grawitacja",
+        "version": "Wersja"
     },
     "adguard": {
         "queries": "Zapytania",

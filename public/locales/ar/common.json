@@ -293,7 +293,8 @@
         "queries": "الاستعلامات",
         "blocked": "محظور",
         "blocked_percent": "تم حظر %",
-        "gravity": "الجاذبية"
+        "gravity": "الجاذبية",
+        "version": "الإصدار"
     },
     "adguard": {
         "queries": "الاستعلامات",

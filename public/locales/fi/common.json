@@ -293,7 +293,8 @@
         "queries": "Kyselyjä",
         "blocked": "Estetty",
         "blocked_percent": "Blocked %",
-        "gravity": "Vakavuus"
+        "gravity": "Vakavuus",
+        "version": "Version"
     },
     "adguard": {
         "queries": "Kyselyjä",

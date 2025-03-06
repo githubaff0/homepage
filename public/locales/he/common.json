@@ -293,7 +293,8 @@
         "queries": "שאילתות",
         "blocked": "נחסם",
         "blocked_percent": "Blocked %",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Version"
     },
     "adguard": {
         "queries": "שאילתות",

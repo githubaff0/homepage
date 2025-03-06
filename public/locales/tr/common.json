@@ -293,7 +293,8 @@
         "queries": "Sorgular",
         "blocked": "Engellenen",
         "blocked_percent": "Engellenen %",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Versiyon"
     },
     "adguard": {
         "queries": "Sorgular",

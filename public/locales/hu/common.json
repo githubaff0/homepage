@@ -293,7 +293,8 @@
         "queries": "Lekérdezések",
         "blocked": "Blokkolt",
         "blocked_percent": "Blokkolt %",
-        "gravity": "Gravitáció"
+        "gravity": "Gravitáció",
+        "version": "Verzió"
     },
     "adguard": {
         "queries": "Lekérdezések",

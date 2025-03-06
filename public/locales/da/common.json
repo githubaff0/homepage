@@ -293,7 +293,8 @@
         "queries": "Forespørgsler",
         "blocked": "Blokerede",
         "blocked_percent": "Blokeret %",
-        "gravity": "Tyngdekraft"
+        "gravity": "Tyngdekraft",
+        "version": "Version"
     },
     "adguard": {
         "queries": "Forespørgsler",

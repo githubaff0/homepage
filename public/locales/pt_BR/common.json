@@ -293,7 +293,8 @@
         "queries": "Consultas",
         "blocked": "Bloqueado",
         "blocked_percent": "Bloqueado %",
-        "gravity": "Gravidade"
+        "gravity": "Gravidade",
+        "version": "Versão"
     },
     "adguard": {
         "queries": "Consultas",

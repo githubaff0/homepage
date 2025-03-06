@@ -293,7 +293,8 @@
         "queries": "Queries",
         "blocked": "Αποκλεισμένο",
         "blocked_percent": "Αποκλεισμένο %",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Έκδοση"
     },
     "adguard": {
         "queries": "Queries",

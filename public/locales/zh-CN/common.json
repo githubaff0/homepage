@@ -97,8 +97,9 @@
     "pihole": {
         "queries": "查询",
         "blocked": "阻止",
+        "blocked_percent": "拦截 %",
         "gravity": "重力",
-        "blocked_percent": "拦截 %"
+        "version": "版本"
     },
     "speedtest": {
         "upload": "上传",

@@ -293,7 +293,8 @@
         "queries": "Dopyty",
         "blocked": "Zablokované",
         "blocked_percent": "Blokované",
-        "gravity": "Gravity"
+        "gravity": "Gravity",
+        "version": "Verzia"
     },
     "adguard": {
         "queries": "Dopyty",

@@ -293,7 +293,8 @@
         "queries": "Запросы",
         "blocked": "Заблокировано",
         "blocked_percent": "Заблокировано %",
-        "gravity": "Плотность"
+        "gravity": "Плотность",
+        "version": "Версия"
     },
     "adguard": {
         "queries": "Запросы",

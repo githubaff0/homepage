@@ -293,7 +293,8 @@
         "queries": "Kueri",
         "blocked": "Terblokir",
         "blocked_percent": "% Terblokir",
-        "gravity": "Gravitasi"
+        "gravity": "Gravitasi",
+        "version": "Versi"
     },
     "adguard": {
         "queries": "Kueri",

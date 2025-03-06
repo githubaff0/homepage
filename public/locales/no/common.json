@@ -293,7 +293,8 @@
         "queries": "Spørringer",
         "blocked": "Blokkert",
         "blocked_percent": "Blokkert %",
-        "gravity": "Gravitasjon"
+        "gravity": "Gravitasjon",
+        "version": "Versjon"
     },
     "adguard": {
         "queries": "Spørringer",

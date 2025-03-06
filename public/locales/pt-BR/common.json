@@ -158,8 +158,9 @@
     "pihole": {
         "queries": "Consultas",
         "blocked": "Bloqueados",
+        "blocked_percent": "Bloqueado %",
         "gravity": "Gravidade",
-        "blocked_percent": "Bloqueado %"
+        "version": "Versão"
     },
     "adguard": {
         "queries": "Consultas",

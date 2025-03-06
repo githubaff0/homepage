@@ -293,7 +293,8 @@
         "queries": "Upiti",
         "blocked": "Blokirano",
         "blocked_percent": "Blokirano %",
-        "gravity": "Gravitacija"
+        "gravity": "Gravitacija",
+        "version": "Verzija"
     },
     "adguard": {
         "queries": "Upiti",

@@ -293,7 +293,8 @@
         "queries": "クエリ",
         "blocked": "ブロック中",
         "blocked_percent": "ブロック %",
-        "gravity": "グラビティ"
+        "gravity": "グラビティ",
+        "version": "バージョン"
     },
     "adguard": {
         "queries": "クエリ",

@@ -293,7 +293,8 @@
         "queries": "查询",
         "blocked": "阻止",
         "blocked_percent": "拦截 %",
-        "gravity": "屏蔽列表"
+        "gravity": "屏蔽列表",
+        "version": "版本"
     },
     "adguard": {
         "queries": "查询",

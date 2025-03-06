@@ -293,7 +293,8 @@
         "queries": "Запити",
         "blocked": "Заблоковано",
         "blocked_percent": "Заблоковано %",
-        "gravity": "Доменів в списку"
+        "gravity": "Доменів в списку",
+        "version": "Версія"
     },
     "adguard": {
         "queries": "Запити",

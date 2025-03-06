@@ -293,7 +293,8 @@
         "queries": "Navraë",
         "blocked": "Geblok",
         "blocked_percent": "Geblok %",
-        "gravity": "Swaartekrag"
+        "gravity": "Swaartekrag",
+        "version": "Weergawe"
     },
     "adguard": {
         "queries": "Navraë",

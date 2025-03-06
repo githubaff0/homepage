@@ -293,7 +293,8 @@
         "queries": "Poizvedbe",
         "blocked": "Blokirano",
         "blocked_percent": "Blokirano %",
-        "gravity": "Gravitacija"
+        "gravity": "Gravitacija",
+        "version": "Verzija"
     },
     "adguard": {
         "queries": "Poizvedbe",
